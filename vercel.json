@@ -2,12 +2,21 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "php@8.3"
+      "runtime": "php@8.2"
     }
   },
   "routes": [
-    { "src": "/build/(.*)", "dest": "/public/build/$1" },
-    { "src": "/(assets|css|js|images)/(.*)", "dest": "/public/$1/$2" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    {
+      "src": "/build/(.*)",
+      "dest": "/public/build/$1"
+    },
+    {
+      "src": "/(assets|css|js|images)/(.*)",
+      "dest": "/public/$1/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
   ]
 }
