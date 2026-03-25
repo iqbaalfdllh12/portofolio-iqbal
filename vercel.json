@@ -2,22 +2,12 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "php@8.2"
+      "runtime": "php@8.3"
     }
   },
   "routes": [
-    {
-      "src": "/build/(.*)",
-      "dest": "/public/build/$1"
-    },
-    {
-      "src": "/(assets|css|js|images)/(.*)",
-      "dest": "/public/$1/$2"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
-    }
-  ],
-  "outputDirectory": "."
+    { "src": "/build/(.*)", "dest": "/public/build/$1" },
+    { "src": "/(assets|css|js|images)/(.*)", "dest": "/public/$1/$2" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ]
 }
