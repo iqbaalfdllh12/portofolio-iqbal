@@ -2,8 +2,7 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php@0.7.0",
-      "memory": 1024
+      "runtime": "php@8.2"
     }
   },
   "routes": [
@@ -19,5 +18,6 @@
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
-  ]
+  ],
+  "outputDirectory": "."
 }
