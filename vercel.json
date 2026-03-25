@@ -2,17 +2,22 @@
   "version": 2,
   "functions": {
     "api/index.php": {
-      "runtime": "vercel-php",
-      "memory": 1024,
-      "maxDuration": 10
+      "runtime": "vercel-php@0.7.0",
+      "memory": 1024
     }
   },
-  "config": {
-    "nodeVersion": "20.x"
-  },
   "routes": [
-    { "src": "/build/(.*)", "dest": "/public/build/$1" },
-    { "src": "/(assets|css|js|images)/(.*)", "dest": "/public/$1/$2" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    {
+      "src": "/build/(.*)",
+      "dest": "/public/build/$1"
+    },
+    {
+      "src": "/(assets|css|js|images)/(.*)",
+      "dest": "/public/$1/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
   ]
 }
