@@ -19,3 +19,4 @@ putenv("SESSION_DRIVER=array"); // Paksa session ke RAM aja, jangan ke file
 putenv("LOG_CHANNEL=errorlog"); // Log ke console Vercel, jangan ke file
 
 require __DIR__ . '/../public/index.php';
+// Cek satu dua tiga, deploy dong!
