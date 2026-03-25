@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "server/app.php": {
+    "api/index.php": {
       "runtime": "vercel-php@0.7.2"
     }
   },
@@ -12,7 +12,8 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/server/app.php"
+      "status": 200,
+      "dest": "/api/index.php"
     }
   ]
 }
